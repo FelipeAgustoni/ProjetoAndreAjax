@@ -3,7 +3,7 @@ $(function(){ // Quando a pagina carrega
     $.ajax({
 		type: "GET",
 		dataType: 'JSON',
-		url: "http://ibge.herokuapp.com/estado/Nome",
+		url: "https://ibge.herokuapp.com/estado/Nome",
 		success: function(retorno){
 		 
 			$.each(retorno, function (key, val) {                
@@ -20,7 +20,7 @@ $('#selEstado').change(function(){
 		$.ajax({
 			type: "GET",
 			dataType: "JSON",
-			url: "http://ibge.herokuapp.com/municipio/?val=" + estado,
+			url: "https://ibge.herokuapp.com/municipio/?val=" + estado,
 			success: function(retorno){
 				//console.log(retorno);
 				$.each(retorno, function(key, val){
